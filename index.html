@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <script>
+      var setFontSize = function () {
+          var clientWith = window.innerWidth;
+          if(clientWith > 414) clientWith = 414;
+          var width = clientWith * (window.devicePixelRatio || 1);
+          var html = document.querySelector("html");
+          html.style.fontSize = (width / 7.5) * (1/window.devicePixelRatio) + 'px';
+          var body = document.querySelector("body");
+          body.style.height = window.innerHeight + 'px';
+          body.style.display = "block";
+      };
+      window.addEventListener('load',function(){
+        setFontSize();
+      })
+      window.addEventListener('resize',function(){
+          setFontSize();
+      });
+    </script>
+  </head>
+  <body style="display: none;">
+    <div id="app"></div>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  </body>
+</html>

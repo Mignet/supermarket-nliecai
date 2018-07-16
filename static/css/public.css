@@ -1,0 +1,161 @@
+html{
+    position: relative;
+    height:100%;
+}
+body{
+    position: relative;
+    line-height:1;
+    -webkit-overflow-scrolling:touch;
+}
+
+.wraper{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin:0 auto;
+}
+
+a{
+    display:block;
+}
+/*按钮样式*/
+a.button {
+    display:block;
+    line-height: 1.04rem;
+    height: 1.04rem;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: .38rem;
+    background: #4e8cef;
+    margin:.4rem .3rem;
+}
+button{
+  border:none;
+  background-color: #fff;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+.oneFlex {
+  flex: 1;
+}
+
+.block {
+    display: block!important;
+}
+
+.inline-block {
+    display: inline-block!important;
+}
+
+.none {
+    display: none!important;
+}
+
+.hidden {
+    visibility: hidden!important;
+}
+
+.arrow {
+    background-image: url("../images/normal/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    background-size: auto .3rem;
+}
+
+.arrow-up {
+    background-image: url("../images/normal/arrow-up.png");
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    background-size: auto .3rem;
+}
+
+.arrow-down {
+    background-image: url('../images/normal/arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    background-size: auto .3rem;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder
+ {
+　　color:#dcdcdc;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.bottom-gap:after{
+  content:"";
+  display:block;
+  width:100;
+  height:.2rem;
+  background-color:#eff0f1;
+}
+
+.ellipsis(){
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.border-bottom-1px{
+  position: relative;
+  border:none;
+}
+
+.border-bottom-1px:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: #eee;
+  width: 100%;
+  height: 1px;
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+}
+.border-1px{
+  position: relative;
+  border:none;
+}
+.border-1px:after{
+  content: '';
+  position: absolute;
+  pointer-events: none; /* 防止点击触发 */
+  top: 0;
+  left: 0;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 100%, 0);
+    display: none;
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
