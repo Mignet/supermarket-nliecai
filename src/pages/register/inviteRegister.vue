@@ -29,7 +29,7 @@
 
             <div class="agreement" >
                 <span :class="select" @click="serviceAgreement"></span>
-                <router-link :to="{name : 'serviceAgreement'}">我同意《猎财大师用户服务协议》</router-link>
+                <router-link :to="{name : 'serviceAgreement'}">我同意《貅比特用户服务协议》</router-link>
             </div>
         </div>
         <div class="intro-wraper">
@@ -112,7 +112,7 @@ export default {
                 switch ( result.regFlag.toString()){
 					// 已注册为理财师
 					case '2':
-                        Vue.popup.tips("您已经是猎财大师用户，可直接登录",function(){
+                        Vue.popup.tips("您已经是貅比特用户，可直接登录",function(){
                             location.href = "https://liecai.bethye.top/pages/download/download.html";
                         });
 						break;
@@ -184,7 +184,7 @@ export default {
                 return;
             }
             if(!this.select){
-                Vue.popup.tips("请同意猎财大师服务协议");
+                Vue.popup.tips("请同意貅比特服务协议");
                 return;
             }
             if(environment === 'produce' && window._hmt){
@@ -205,7 +205,7 @@ export default {
                 sessionStorage.removeItem('__ISPUSHAPPID__');
                 // location.href = "https://liecai.bethye.top/pages/download/download.html";
                 comm.setCookie("__mobile__",self.tel,2);
-                comm.setCookie("__token__",result.token,2); 
+                comm.setCookie("__token__",result.token,2);
                 Util.redirect('/mine?isPush=2');
             })
         },
@@ -388,7 +388,7 @@ img{
 }
 
 .register-to-top{
-    position: absolute; 
+    position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -3.45rem;

@@ -3,36 +3,36 @@
 		<img src="./1-banner.png">
 		<div class="item">
 			<div class="inner">
-				<h3 class="title">猎财大师是做什么的？</h3>
-				<p>猎财大师是深圳市前海领会科技有限公司致力于为理财师打造的“一站式”理财、投顾服务的零门槛创业平台。猎财大师秉持“不碰资金，专注于第三方服务平台”的原则，为理财师提供多渠道、多元化的产品和不同阶段的晋升通道，最大程度满足理财师及普通投资者的理财、投顾需求。</p>
+				<h3 class="title">貅比特是做什么的？</h3>
+				<p>貅比特是深圳市戈锐科技有限公司致力于为理财师打造的“一站式”理财、投顾服务的零门槛创业平台。貅比特秉持“不碰资金，专注于第三方服务平台”的原则，为理财师提供多渠道、多元化的产品和不同阶段的晋升通道，最大程度满足理财师及普通投资者的理财、投顾需求。</p>
 			</div>
 		</div>
 
 		<div class="item">
 			<div class="inner">
-				<h3 class="title">猎财大师如何解决投资管理痛点？</h3>
+				<h3 class="title">貅比特如何解决投资管理痛点？</h3>
 				<img src="./1-table.png">
 			</div>
 		</div>
 
 		<div class="item">
 			<div class="inner">
-				<h3 class="title">猎财大师如何保障用户资金安全？</h3>
+				<h3 class="title">貅比特如何保障用户资金安全？</h3>
 				<img src="./1-safe.png">
 			</div>
 		</div>
 
 		<div class="item">
 			<div class="inner">
-				<h3 class="title">猎财大师如何帮用户获得超高收益？</h3>
+				<h3 class="title">貅比特如何帮用户获得超高收益？</h3>
 				<img src="./1-earn.png">
 			</div>
 		</div>
 
 		<div class="item">
 			<div class="inner">
-				<h3 class="title">猎财大师平台成绩如何？</h3>
-				<p>猎财大师上线至今，用户除了获得理财收益之外，猎财大师额外给理财师发放佣金超过2000万元；平台活跃理财师人数逾8000人，覆盖全国346个城市，平均每月复投率在70%左右。</p>
+				<h3 class="title">貅比特平台成绩如何？</h3>
+				<p>貅比特上线至今，用户除了获得理财收益之外，貅比特额外给理财师发放佣金超过2000万元；平台活跃理财师人数逾8000人，覆盖全国346个城市，平均每月复投率在70%左右。</p>
 				<ul class="data-wrapper clearfix">
 					<li>
 						<h3 v-html="commissionAmount"></h3>

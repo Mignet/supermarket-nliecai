@@ -17,7 +17,7 @@
 		</ul>
 		<div class="agree">
 			<input type="checkbox" checked id="isAgree" ref="agreement">
-			我同意<router-link :to="{name : 'serviceAgreement'}">《猎财大师用户服务协议》</router-link>
+			我同意<router-link :to="{name : 'serviceAgreement'}">《貅比特用户服务协议》</router-link>
 		</div>
 		<!-- 底部内容 -->
 		<div >
@@ -69,7 +69,7 @@ export default {
 				return;
 			}
 			if(!this.$refs.agreement.checked){
-				Vue.popup.tips("请同意猎财大师服务协议");
+				Vue.popup.tips("请同意貅比特服务协议");
 				return false;
 			}
 			this.register();
@@ -83,7 +83,7 @@ export default {
 				recommendCode : this.recommendCode
             },(result)=>{
             	comm.setCookie("__mobile__",self.mobile,2);
-            	comm.setCookie("__token__",result.token,2); 
+            	comm.setCookie("__token__",result.token,2);
             	sessionStorage.removeItem('__ISPUSHAPPID__');
             	if(self.recommendCode){
             		Util.redirect('/mine?isPush=2');

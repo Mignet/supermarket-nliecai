@@ -28,7 +28,7 @@
     <div class="coupon-wrap" v-if="detail.couldUseRedPacketCounts > 0">
       <div class="left">
         <img src="./../../assets/packet-icon.png">
-        <p>猎财专享优惠券</p>
+        <p>貅比特专享优惠券</p>
       </div>
       <div class="right">{{detail.couldUseRedPacketCounts}}</div>
     </div>
@@ -63,14 +63,14 @@
     </div>
 
     <div class="lvdun-wrapper">
-      <img src="./lvdun-icon.png">猎财大师律盾计划拥有完善的权益安心机制
+      <img src="./lvdun-icon.png">貅比特律盾计划拥有完善的权益安心机制
     </div>
     <div class="footer-wrapper">
       <div class="strategy-wrapper">
         <img src="./../../assets/strategy.png">
         <router-link :to="{name : 'strategy',query:{orgNumber : orgInfoResponse.orgNo}}">
           <span class="icon-strategy"></span>
-          <span>猎财攻略</span>
+          <span>貅比特攻略</span>
         </router-link>
       </div>
       <div class="buy-wrapper" :class="buyStateClass">
@@ -424,7 +424,7 @@ export default{
       var self = this;
       Vue.popup.confirm({
         title:"您已有"+self.detail.orgName+"帐号",
-        msg:"通过猎财大师投资不能享受佣金、津贴、红包等奖励，建议您购买其他平台产品",
+        msg:"通过貅比特投资不能享受佣金、津贴、红包等奖励，建议您购买其他平台产品",
         okText:'好的',
         okCb(){
         }
@@ -436,8 +436,8 @@ export default{
         title: '投资返利说明',
         msg: '<div>'+
                 '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">1.绑定账户关系</h2><p style="font-size:.24rem;color:#999;">将你的账户与该平台绑定</p></section>'+
-                '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">2.购买猎财专享加息标的</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">完成平台绑卡、开通存管等服务后</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;"><br />返回猎财购买加息产品</span></p></section>'+
-                '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">3.获得理财额外收益</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">起息后，获得猎财专享</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;">额外收益</span></p></section>'+
+                '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">2.购买貅比特专享加息标的</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">完成平台绑卡、开通存管等服务后</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;"><br />返回貅比特购买加息产品</span></p></section>'+
+                '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">3.获得理财额外收益</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">起息后，获得貅比特专享</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;">额外收益</span></p></section>'+
               '</div>',
         btn : [{
                 name: '立即绑定',

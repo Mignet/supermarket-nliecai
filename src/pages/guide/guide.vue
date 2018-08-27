@@ -1,7 +1,7 @@
 <template>
 	<div class="template">
     <header>
-      <img src="../../../static/images/strategy/banner.png" alt="猎财大师">
+      <img src="../../../static/images/strategy/banner.png" alt="貅比特">
     </header>
     <div class="wrapper red-packet-wrapper">
       <nav>自己买&nbsp;佣金+收益都是你的</nav>

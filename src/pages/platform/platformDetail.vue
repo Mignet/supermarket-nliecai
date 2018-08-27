@@ -27,7 +27,7 @@
         <li @click="tabChange(2)" :class="{active:tabIndex == 2?true :false}"><span>档案</span></li>
         <li @click="tabChange(3)" :class="{active:tabIndex == 3?true :false}"><span>动态</span></li>
       </ul>
-      
+
       <div class="intro-content">
         <div class="content-one" v-show='tabIndex == 0'>
           <div class="content-one-inner" ref='contentOneWrapper' :class="{active:!isArrowDown}">
@@ -108,10 +108,10 @@
     <div class="saleProduct-wrapper">
       <h1>在售产品({{productListTotalCount}})</h1>
       <div class="productList-inner">
-        <pullup 
+        <pullup
           api="productPageList"
           :params="{orgCode : orgNumber,sort:2,order:1}"
-        > 
+        >
           <product-item :item="slotProps.item" slot-scope="slotProps"/>
           <empty-temp msg="暂无记录" slot="empty"/>
         </pullup>
@@ -223,7 +223,7 @@
           comm.setTitle(result.orgName)
           if (result.orgActivitys.length > 0) {
             this.activityShow = true;
-          } 
+          }
           if(result.orgHonor.length > 0){
             this.honorShow = true;
           }
@@ -285,8 +285,8 @@
             }else{
               window.location.href = `${appLiecaiHost[environment]}/pages/user/invite_enroll.html?recommendCode=${this.query.recommendCode}&fromApp=liecai`
             }
-          }else{ 
-            this.loginTip() 
+          }else{
+            this.loginTip()
           }
           return;
         }else{
@@ -389,7 +389,7 @@
         var self = this;
         Vue.popup.confirm({
           title:"您已有"+self.platformInfo.orgName+"帐号",
-          msg:"通过猎财大师投资不能享受佣金、津贴、红包等奖励，建议您购买其他平台产品",
+          msg:"通过貅比特投资不能享受佣金、津贴、红包等奖励，建议您购买其他平台产品",
           okText:'好的',
           okCb(){
           }
@@ -399,11 +399,11 @@
         var self = this;
         Vue.popup.show({
           title: '投资返利说明',
-          msg: 
+          msg:
             '<div>'+
               '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">1.绑定账户关系</h2><p style="font-size:.24rem;color:#999;">将你的账户与该平台绑定</p></section>'+
-              '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">2.购买猎财专享加息标的</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">完成平台绑卡、开通存管等服务后</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;"><br />返回猎财购买加息产品</span></p></section>'+
-              '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">3.获得理财额外收益</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">起息后，获得猎财专享</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;">额外收益</span></p></section>'+
+              '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">2.购买貅比特专享加息标的</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">完成平台绑卡、开通存管等服务后</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;"><br />返回貅比特购买加息产品</span></p></section>'+
+              '<section style="text-align:left;padding-bottom:.2rem;"><h2 style="font-size:.32rem;color:#666;">3.获得理财额外收益</h2><p><span style="font-size:.24rem;color:#999;line-height:1.5;">起息后，获得貅比特专享</span><span style="color:#fd5d5d;line-height:1.5;font-size:.24rem;">额外收益</span></p></section>'+
               '</div>',
           btn:[{
             name: '立即绑定',

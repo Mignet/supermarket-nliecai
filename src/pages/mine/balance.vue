@@ -1,4 +1,4 @@
-<!-- 猎财余额 -->
+<!-- 貅比特余额 -->
 <template>
 	<div class="balance-container">
 		<router-link class="record" to="/mine/widthdrawRecord">提现记录</router-link>
@@ -106,11 +106,11 @@
 									self.$router.push('/setting/bind')
 								}
 							});
-							
+
 						}
 					}
 				})
-			}	
+			}
 		}
 	}
 </script>

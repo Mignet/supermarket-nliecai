@@ -2,14 +2,14 @@
 	<div class="buy-tips-container">
 		<div class="mask" @click.stop="hideTipsEvent"></div>
 		<div class="content">
-			<button class="close-btn" @click.stop="hideTipsEvent">	
+			<button class="close-btn" @click.stop="hideTipsEvent">
 				<img src="./../../assets/close-btn.png">
 			</button>
 			<h2>购买须知</h2>
 			<p>请用此手机号码注册购买<br />{{mobile | hideMobile}}</p>
 			<a :href="link" class="btn" @click.stop = 'removeLocalSharedBtn'>去注册购买</a>
-			<h3>* 平台首次投资，才能获得猎财返现。</h3>
-			<h3>* 猎财大师将以此手机号码进行报单返现。</h3>
+			<h3>* 平台首次投资，才能获得貅比特返现。</h3>
+			<h3>* 貅比特将以此手机号码进行报单返现。</h3>
 			<h3>* 分散投资、选择恰当周期的标的，可有效降低风险。</h3>
 		</div>
 	</div>

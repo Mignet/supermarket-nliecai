@@ -1,10 +1,10 @@
 const titles = {
-	home:'猎财大师',
+	home:'貅比特',
 
   login: '登录',
 
   // 我的
-  mine: '猎财大师',
+  mine: '貅比特',
   balance:'余额',
   widthdrawSuccess:'提现',
   widthdrawRecord:'提现记录',
@@ -21,7 +21,7 @@ const titles = {
   // 产品
   bindFail:'绑定账户',
   calculator: '佣金计算',
-  strategy: '猎财攻略',
+  strategy: '貅比特攻略',
 
   message: '消息',
 
@@ -53,9 +53,9 @@ const titles = {
 
   thirdRegister : "注册",
 
-  home:'猎财大师',
+  home:'貅比特',
 
-  understand:'了解猎财',
+  understand:'了解貅比特',
 
   commission : '销售佣金说明',
 

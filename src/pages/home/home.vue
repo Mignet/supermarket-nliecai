@@ -2,9 +2,9 @@
   <div class="home-container" :style="{ visibility: isShow?'visible' : 'hidden' }">
     <div class="top-wrapper bottom-gap">
         <header>
-          <a @click="downloadTopTongji">
+          <!--<a @click="downloadTopTongji">
             <img src="../../../static/images/download-icon-white.png">
-          </a>
+          </a>-->
           <router-link :to="isLogin?'/mine':'/login/login'">
             <img src="./mine.png">
           </router-link>
@@ -61,10 +61,10 @@
       </div>
       <div class="bottom-gap"></div>
     </div>
-    <div class="footer-wrapper">
+    <!--<div class="footer-wrapper">
       <a href="tel:400-888-6987" @click="kefuTongji"><span class="icon-client"></span>联系客服</a>
       <a @click="bottomDownloadTongji"><span class="icon-download"></span>下载APP</a>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>

@@ -103,7 +103,7 @@ export default {
   //佣金计算
   profitCalculate    : 'product/profitCalculate',
 
-  //猎财攻略
+  //貅比特攻略
   investmentStrategy : 'platfrom/investmentStrategy',
 
   // 用户是否注册

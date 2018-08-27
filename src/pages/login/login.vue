@@ -26,9 +26,9 @@
 				<p><router-link :to="{name:'register'}">注册领528红包</router-link></p>
 				<p><a></a></p>
 			</div>
-			<div class="link-telphone" v-show="telephoneShow">
+			<!--<div class="link-telphone" v-show="telephoneShow">
 				客服电话 400-888-6987
-			</div>
+			</div>-->
 		</div>
 	</div>
 </template>

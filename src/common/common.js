@@ -1,9 +1,9 @@
 const comm = {
 	setTitle(str){
-		document.title = str || '猎财大师';
+		document.title = str || '貅比特';
 		var iframe = document.createElement('iframe');
 		iframe.style.display = 'none';
-		iframe.setAttribute('src', '/favicon.ico');
+		iframe.setAttribute('src', '/favicon.ico.bak');
 		document.body.appendChild(iframe);
 		iframe.onload = function() {
 		    setTimeout(() => {
@@ -98,29 +98,29 @@ const comm = {
         }
         return result;
     },
-    /** Convert Base64 data to a string */ 
-    base64ToString :function(data) {  
-        var toBinaryTable = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63,52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, 0, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,38, 39, 40,41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1];  
+    /** Convert Base64 data to a string */
+    base64ToString :function(data) {
+        var toBinaryTable = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63,52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, 0, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,38, 39, 40,41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1];
         var base64Pad = '=';
-        var result = '';  
+        var result = '';
         var leftbits = 0;
-        var leftdata = 0;                                                                         
-        for (var i = 0; i < data.length; i++) {  
-            var c = toBinaryTable[data.charCodeAt(i) & 0x7f];  
-            var padding = (data.charCodeAt(i) == base64Pad.charCodeAt(0)); 
-            if (c == -1) continue;  
-            leftdata = (leftdata << 6) | c;  
-            leftbits += 6;  
-            if (leftbits >= 8) {  
+        var leftdata = 0;
+        for (var i = 0; i < data.length; i++) {
+            var c = toBinaryTable[data.charCodeAt(i) & 0x7f];
+            var padding = (data.charCodeAt(i) == base64Pad.charCodeAt(0));
+            if (c == -1) continue;
+            leftdata = (leftdata << 6) | c;
+            leftbits += 6;
+            if (leftbits >= 8) {
                 leftbits -= 8;
-                if (!padding)  
-                    result += String.fromCharCode((leftdata >> leftbits) & 0xff);  
-                leftdata &= (1 << leftbits) - 1;  
+                if (!padding)
+                    result += String.fromCharCode((leftdata >> leftbits) & 0xff);
+                leftdata &= (1 << leftbits) - 1;
             }
-        }                                    
-        if (leftbits)  
-            throw Components.Exception('Corrupted base64 string');  
-        return result;  
+        }
+        if (leftbits)
+            throw Components.Exception('Corrupted base64 string');
+        return result;
     },
     toDecimal(num, flg, decimal){
     var decimal = decimal || 2;

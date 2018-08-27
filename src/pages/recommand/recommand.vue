@@ -11,7 +11,7 @@
         </ul>
         <button @click="submit" ref="num">
             <p>推荐({{checkedLen}})</p>
-            <p>自己购买猎财产品，佣金和收益可以一起拿哦</p>
+            <p>自己购买貅比特产品，佣金和收益可以一起拿哦</p>
         </button>
     </div>
 </template>
@@ -45,7 +45,7 @@
                 var self = this;
                 for(let list in result){
                     if(result[list].userName == ""){
-                       result[list].userName = "未认证"; 
+                       result[list].userName = "未认证";
                     }
                     if(!result[list].ifRecommend == 0){
                         result[list].checkStatus = "checked";
@@ -60,7 +60,7 @@
             select (list){
                 var self = this;
                 if(list.checkStatus == "uncheck"){
-                    list.checkStatus = "checked"; 
+                    list.checkStatus = "checked";
                     self.userIdSet.push(list.userId);
                 }else if(list.checkStatus == "checked"){
                     list.checkStatus = "uncheck";
@@ -71,8 +71,8 @@
                 // 这个在小米机型无效，通过异步延迟来处理
                 this.$refs.num.style.display = 'none';
                 setTimeout(function(){
-                    self.$refs.num.style.display = '';                  
-                },0)    
+                    self.$refs.num.style.display = '';
+                },0)
             },
             submit:function(){
                 var self = this;

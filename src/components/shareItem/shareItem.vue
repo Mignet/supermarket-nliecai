@@ -30,7 +30,7 @@
 </template>
 <script>
 	import 'swiper/dist/css/swiper.css'
-	 
+
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	export default {
 		name:'shareItem',
@@ -58,7 +58,7 @@
 		},
 		methods:{
 			_filter(result){
-				result.desc = `我在${result.investTime.split(' ')[0]}投资${result.platfromName}${result.productDeadLine}天标${result.investAmt}元<span style="color:#fd5f5f;line-height:1.5;">获得${result.feeAmt}元猎财返现</span>`
+				result.desc = `我在${result.investTime.split(' ')[0]}投资${result.platfromName}${result.productDeadLine}天标${result.investAmt}元<span style="color:#fd5f5f;line-height:1.5;">获得${result.feeAmt}元貅比特返现</span>`
 				result.md5Arr = result.investImage.split(',')
 				this.imgArr = result.md5Arr
 				return result
@@ -98,7 +98,7 @@
 </script>
 <style scoped>
 	.share-item-container{
-		padding:.18rem .3rem; 
+		padding:.18rem .3rem;
 		border-bottom: 1px solid #eee;
 		background-color: #fff;
 	}

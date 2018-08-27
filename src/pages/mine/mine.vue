@@ -18,7 +18,7 @@
             </a>
         </div>
         <div class="myCfgAccount">
-            <homeTitle name="猎财账户"></homeTitle>
+            <homeTitle name="貅比特账户"></homeTitle>
             <a class="myCfgAccount-info">
               <ul>
                 <li>
@@ -372,7 +372,7 @@
     }
 
 
-    /*我的猎财账户*/
+    /*我的貅比特账户*/
     .myCfgAccount{
         position: relative;
         width: 100%;

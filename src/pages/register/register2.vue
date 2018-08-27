@@ -12,7 +12,7 @@
             </li>
             <li>
                 <label for="firstPassword">输入密码</label>
-                <input id ="firstPassword" type="password" placeholder="6~20位数字、字母和字符组合" v-model="firstPassword"> 
+                <input id ="firstPassword" type="password" placeholder="6~20位数字、字母和字符组合" v-model="firstPassword">
             </li>
             <li>
                 <label for="againPassword">确认密码</label>
@@ -23,18 +23,18 @@
 
     <div class="agreement">
         <span :class="select" @click="serviceAgreement"></span>
-        <router-link :to="{name : 'serviceAgreement'}">我同意《猎财大师用户服务协议》</router-link> 
+        <router-link :to="{name : 'serviceAgreement'}">我同意《貅比特用户服务协议》</router-link>
     </div>
 
     <a class="button" style="margin:0 .3rem;" @click="registerMatch">完成</a>
-    <p class="custom-service">客服电话400-888-6987</p>
+    <!--<p class="custom-service">客服电话400-888-6987</p>-->
 </div>
 </template>
 <script>
 import service from "../../resource/service";
 import Util from "../../common/util";
 export default{
-    name : 'register2',    
+    name : 'register2',
     data (){
         return {
             select : "select",
@@ -69,13 +69,13 @@ export default{
                 mobile:this.$route.query.mobile,
                 type  : 1,
             },function(){
-                self.identifyingCodeTimer();               
+                self.identifyingCodeTimer();
                 self.status = 0;
             });
         },
         registerMatch (){
             if(!this.select){
-                Vue.popup.tips("请同意猎财大师服务协议");
+                Vue.popup.tips("请同意貅比特服务协议");
                 return;
             }
             if(!this.identifyingCode){
@@ -110,7 +110,7 @@ export default{
                 accessUrl: sessionStorage.getItem('__href__'),
             },(result)=>{
                 comm.setCookie("__mobile__",self.mobile,2);
-                comm.setCookie("__token__",result.token,2); 
+                comm.setCookie("__token__",result.token,2);
                 sessionStorage.removeItem('__ISPUSHAPPID__');
                 Util.redirect('/mine?isPush=1');
             })

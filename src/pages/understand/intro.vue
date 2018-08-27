@@ -1,18 +1,18 @@
 <template>
 	<div class="content-2">
-		<div class="one">
+		<!--<div class="one">
 			<img src="./2-company-pic1.png">
-		</div>
+		</div>-->
 		<div class="two">
-		    <p>深圳市前海领会科技有限公司(以下简称“领会科技”)成立于2015年9月14日，是中国创新金融领域新兴力量的代表。</p>
-		    <p>领会科技是一家专注于打造金融创业生态平台的金融科技公司。目前，公司服务遍布全国23个省，4个直辖市，346个城市。</p>
+		    <p>深圳市戈锐科技有限公司(以下简称“戈锐科技”)成立于2015年9月14日，是中国创新金融领域新兴力量的代表。</p>
+		    <p>戈锐科技是一家专注于打造金融创业生态平台的金融科技公司。目前，公司服务遍布全国23个省，4个直辖市，346个城市。</p>
 		    <div v-show="isShowMore">
-		        <p>领会科技旗下拥有服务于理财师的智能掌上工具"猎财大师",服务于投资者的互联网金融信息导流平台"T呗",以及后期为金融机构提供用户导流、技术支持、品牌曝光等一系列配套服务的SAAS系统。</p>
-		        <p>领会科技致力于以理财师为核心，构建理财师、投资者、金融机构三方相互促进、共同发展的理财师生态圈，推进互联网技术与金融信息化发展的融合。</p>
+		        <p>戈锐科技旗下拥有服务于理财师的智能掌上工具"貅比特",服务于投资者的互联网金融信息导流平台"T呗",以及后期为金融机构提供用户导流、技术支持、品牌曝光等一系列配套服务的SAAS系统。</p>
+		        <p>戈锐科技致力于以理财师为核心，构建理财师、投资者、金融机构三方相互促进、共同发展的理财师生态圈，推进互联网技术与金融信息化发展的融合。</p>
 		    </div>
 		    <p class="learn-detail" @click="showMore" v-show="!isShowMore">了解更多<span class="icon-down-arrow"></span></p>
 		</div>
-		<div class="three">
+		<!--<div class="three">
 			<div class="three-inner">
 				<div class="second-title">
 					<img src="./2-title1.png">
@@ -23,7 +23,7 @@
 				<img  @click="showLayer('850ea1ca60961e601c1446720ba6bbb5')" src="./2-license.png">
 				<h4>营业执照</h4>
 			</div>
-		</div>
+		</div>-->
 
 		<div class="four">
 			<div class="four-inner">
@@ -31,9 +31,9 @@
 					<img src="./2-title2.png">
 					<p class="sub-title">互联网+银行团队倾力打造</p>
 				</div>
-				<img src="./anshan.png">
+				<!--<img src="./anshan.png">
 				<img src="./dingchao.png">
-				<img src="./luyuanli.png">
+				<img src="./luyuanli.png">-->
 				<h2><p>团队更多人来自</p></h2>
 				<img src="./2-team.png" style="width:5.6rem;">
 			</div>

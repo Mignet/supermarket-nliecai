@@ -2,7 +2,7 @@
 	<div class="understand-container">
 		<div id="tab" class="tab-wrapper" ref="tab">
 			<p :class="isOne ? 'active' : '' " @click="oneClick">
-				<span>关于猎财大师</span>
+				<span>关于貅比特</span>
 			</p>
 			<p  :class="isOne ? '' : 'active' " @click="twoClick">
 				<span>公司介绍</span>
@@ -31,7 +31,7 @@
 				isOne:true,
 				scroll : null,
 				shareContent:{
-					title  : '了解猎财大师',
+					title  : '了解貅比特',
 					desc   : '国内首家零门槛理财师创业平台,为理财师提供“一站式”理财、投顾服务。',
 					link   : staticHost[environment] + this.$router.currentRoute.fullPath,
 					imgUrl : liecaiIcon
