@@ -8,7 +8,7 @@
 			<div @click.stop="goIndex" class="button-wrap">查看其它理财产品</div>
 		</div>
 		<div class="bottom-wrap">
-			<a>需要帮助？联系客服</a><a href="tel:400-888-6987">400-888-6987</a>
+			<a>需要帮助？联系客服</a><a href="tel:0755-86725461">0755-86725461</a>
 		</div>
 	</div>
 </template>

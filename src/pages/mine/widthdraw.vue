@@ -60,7 +60,7 @@
 			http.post('getWithdrawBankCard').then(res=>{
 				// 银行卡后四位
 				res.bankLatterFour = res.bankCard.substr(res.bankCard.length - 4)
-				res.feeText = res.fee === '1.00' ? "手续费 ¥1.00" : '免手续费' 
+				res.feeText = res.fee === '1.00' ? "手续费 ¥1.00" : '免手续费'
 				this.bankInfo = res
 			})
 			this.getMyAccount()
@@ -75,7 +75,7 @@
 				 }else{
 				    val = val.substring(0,val.length-1);
 				 }
-				val =  val.replace(/^(0+)/, '0'); 
+				val =  val.replace(/^(0+)/, '0');
 				if(val.length >= 11){
 					val = val.substr(0,val.length - 1)
 				}
@@ -158,7 +158,7 @@
 			},
 			bindTips(){
 				Vue.popup.alert({
-					msg: '暂时只支持绑定一张银行卡,提现至其他银行卡,请联系客服(<a style="display:inline;color:#4e8cef;" href="tel:400-888-6987">400-888-6987</a>)更换银行卡',
+					msg: '暂时只支持绑定一张银行卡,提现至其他银行卡,请联系客服(<a style="display:inline;color:#4e8cef;" href="tel:0755-86725461">0755-86725461</a>)更换银行卡',
 					btnText: '我知道了'
 				});
 			},

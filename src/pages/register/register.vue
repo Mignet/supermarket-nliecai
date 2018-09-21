@@ -7,7 +7,7 @@
         </div>
         <a class="button" @click="nextStep">下一步</a>
         <p class="login">已有账号？直接<router-link :to="{name : 'login'}" style="color:#007aff;margin-left:2px">登录</router-link></p>
-        <!--<p class="custom-service" v-show="customService">客服电话 400-888-6987</p>-->
+        <!--<p class="custom-service" v-show="customService">客服电话 0755-86725461</p>-->
     </div>
 </template>
 <script>

@@ -12,7 +12,7 @@
 		<div class="button-wrap">
 			<button @click.stop="checkVerifyCode" :class="{active:canVerifyCode}">下一步</button>
 		</div>
-		<div class="tips">收不到验证码？联系客服<a href="tel:400-888-6987">400-888-6987</a></div>
+		<div class="tips">收不到验证码？联系客服<a href="tel:0755-86725461">0755-86725461</a></div>
 	</div>
 	</div>
 </template>

@@ -62,7 +62,7 @@
       <div class="bottom-gap"></div>
     </div>
     <!--<div class="footer-wrapper">
-      <a href="tel:400-888-6987" @click="kefuTongji"><span class="icon-client"></span>联系客服</a>
+      <a href="tel:0755-86725461" @click="kefuTongji"><span class="icon-client"></span>联系客服</a>
       <a @click="bottomDownloadTongji"><span class="icon-download"></span>下载APP</a>
     </div>-->
   </div>

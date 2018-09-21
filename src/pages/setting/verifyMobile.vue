@@ -46,7 +46,7 @@
 			cannotReceiveVerifyCode(){
 				Vue.popup.alert({
 					title:'收不到验证码',
-					msg:"<div style='text-align:justify;'><p>1.请确认当前手机号是否为该银行卡预留手机号</p><p>2.检查短信是否被手机安全软件拦截</p><p>3.预留手机号停用，联系银行客服咨询</p><p>更多帮助致电貅比特客服<a href='tel:400-888-6987' style='display:inline;color:#4e8cef;'>400-888-6987</a></p></div>",
+					msg:"<div style='text-align:justify;'><p>1.请确认当前手机号是否为该银行卡预留手机号</p><p>2.检查短信是否被手机安全软件拦截</p><p>3.预留手机号停用，联系银行客服咨询</p><p>更多帮助致电貅比特客服<a href='tel:0755-86725461' style='display:inline;color:#4e8cef;'>0755-86725461</a></p></div>",
 					btnText:'我知道了'
 				})
 			},

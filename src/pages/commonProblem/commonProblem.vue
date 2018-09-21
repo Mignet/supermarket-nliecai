@@ -3,7 +3,7 @@
            <div class="header">
                <img class="header-icon" src="../../../static/images/mine/mine_helpCenter_default_icon.png">
                <span class="serverInfo">
-                   <p class="server-number">400-888-6987</p>
+                   <p class="server-number">0755-86725461</p>
                    <p class="server-time">服务时间  9:00~12:00  13:30~18:00</p>
                </span>
                <img class="server-phone" src="../../../static/images/mine/mine_helpCenter_phone_icon.png" @click="clickPhone">

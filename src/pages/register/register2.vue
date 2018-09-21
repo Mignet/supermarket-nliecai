@@ -27,7 +27,7 @@
     </div>
 
     <a class="button" style="margin:0 .3rem;" @click="registerMatch">完成</a>
-    <!--<p class="custom-service">客服电话400-888-6987</p>-->
+    <!--<p class="custom-service">客服电话0755-86725461</p>-->
 </div>
 </template>
 <script>
