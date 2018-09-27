@@ -11,33 +11,33 @@ if(process.env.NODE_ENV === 'production'){
 const httpProtocol = 'http://'
 
 const serverHost  = {
-    pre  : 'premarket.bethye.top',
-    produce : 'market.bethye.top'
+    pre  : 'premarket.v5ent.com',
+    produce : 'market.v5ent.com'
 };
 
 const imgHost     =  {
-	pre     :'preimage.bethye.top',
-	produce :'image.bethye.top'      
+	pre     :'preimage.v5ent.com',
+	produce :'image.v5ent.com'
 };
 
 const evnHost = {
-	pre     : 'https://prenliecai.bethye.top/',
-	produce : 'https://nliecai.bethye.top/'
+	pre     : 'https://prenliecai.v5ent.com/',
+	produce : 'https://nliecai.v5ent.com/'
 }
 
 const staticHost = {
-	pre     : 'https://prenliecai.bethye.top',
-	produce : 'https://nliecai.bethye.top'
+	pre     : 'https://prenliecai.v5ent.com',
+	produce : 'https://nliecai.v5ent.com'
 }
 
 const appLiecaiHost = {
-	pre: "https://preliecai.bethye.top",
-	produce: "https://liecai.bethye.top"
+	pre: "https://preliecai.v5ent.com",
+	produce: "https://liecai.v5ent.com"
 }
 
 const liecaiIcon = httpProtocol +  imgHost[environment] + '/' +'dfa3e35be331f6ec67566130f67820b9' + '?f=png'
 
-export {environment,serverHost,imgHost,evnHost,liecaiIcon,staticHost,appLiecaiHost};	
+export {environment,serverHost,imgHost,evnHost,liecaiIcon,staticHost,appLiecaiHost};
 
 
 

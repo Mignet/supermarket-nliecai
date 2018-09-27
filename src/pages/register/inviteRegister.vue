@@ -113,7 +113,7 @@ export default {
 					// 已注册为理财师
 					case '2':
                         Vue.popup.tips("您已经是貅比特用户，可直接登录",function(){
-                            location.href = "https://liecai.bethye.top/pages/download/download.html";
+                            location.href = "https://liecai.v5ent.com/pages/download/download.html";
                         });
 						break;
 					// 注册第三方
@@ -203,7 +203,7 @@ export default {
                 accessUrl: sessionStorage.getItem('__href__'),
             },(result)=>{
                 sessionStorage.removeItem('__ISPUSHAPPID__');
-                // location.href = "https://liecai.bethye.top/pages/download/download.html";
+                // location.href = "https://liecai.v5ent.com/pages/download/download.html";
                 comm.setCookie("__mobile__",self.tel,2);
                 comm.setCookie("__token__",result.token,2);
                 Util.redirect('/mine?isPush=2');

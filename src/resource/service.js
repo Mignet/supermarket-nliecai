@@ -40,7 +40,7 @@ export default {
                 location.href = '/login/login';
             }else if(response.body && response.body.code === '100005'){
                 self.onFail(response.body,function(){
-                    // location.href = "https://liecai.bethye.top/pages/download/download.html";
+                    // location.href = "https://liecai.v5ent.com/pages/download/download.html";
                 });
             } else {
                 self.onFail(response.body);

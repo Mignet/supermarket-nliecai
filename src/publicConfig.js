@@ -8,22 +8,22 @@ if(process.env.NODE_ENV === 'production'){
 
 // const httpsProtocol = 'https://'
 const httpsProtocol = 'http://'
-	
+
 // 后台服务地址
 const serverHost  = {
-    pre  : 'premarket.bethye.top/',
-    produce : 'market.bethye.top/'
+    pre  : 'premarket.v5ent.com/',
+    produce : 'market.v5ent.com/'
 };
 
 // 图片服务器地址
 const imgHost =  {
-	pre :'preimage.bethye.top/',
-	produce  :'image.bethye.top/'      
+	pre :'preimage.v5ent.com/',
+	produce  :'image.v5ent.com/'
 };
 
 const projectHost = {
-	pre :'predeclare.bethye.top/',
-	produce  :'declare.bethye.top/' 
+	pre :'predeclare.v5ent.com/',
+	produce  :'declare.v5ent.com/'
 }
 
 const httpsServerUrl = httpsProtocol + serverHost[environment]

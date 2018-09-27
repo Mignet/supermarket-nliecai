@@ -135,13 +135,13 @@ const comm = {
   setCookie(name, value, expiredays) {
     let d = new Date();
     d.setDate(d.getDate() + expiredays);
-    // document.cookie = name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + d.toGMTString()) + ";path=/;domain=.bethye.top";
+    // document.cookie = name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + d.toGMTString()) + ";path=/;domain=.v5ent.com";
     var reg = /((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))/;
     if(document.domain && (document.domain === "localhost" || reg.test(document.domain))){
       //如果document.domain是localhost或ip就不做cookie domain限制
       document.cookie = name+ "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + d.toGMTString())+";path=/";
     }else{
-      document.cookie = name+ "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + d.toGMTString())+";path=/;domain=.bethye.top";
+      document.cookie = name+ "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + d.toGMTString())+";path=/;domain=.v5ent.com";
     }
   },
   getCookie(name) {
