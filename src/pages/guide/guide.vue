@@ -49,9 +49,9 @@
             if(result.datas[0]){
                self.flowMaxRate = result.datas[0].productPageListResponse.flowMaxRate.toFixed(2);
                if(environment === "produce"){
-                    self.buyUrl = "https://www.v5ent.com/app/pages/financing/product_detail.html?productId="+ result.datas[0].productPageListResponse.productId + "&token=" + self.token
+                    self.buyUrl = "http://www.v5ent.com/app/pages/financing/product_detail.html?productId="+ result.datas[0].productPageListResponse.productId + "&token=" + self.token
                }else{
-                    self.buyUrl = "https://pre.v5ent.com/app/pages/financing/product_detail.html?productId="+ result.datas[0].productPageListResponse.productId + "&token=" + self.token
+                    self.buyUrl = "http://pre.v5ent.com/app/pages/financing/product_detail.html?productId="+ result.datas[0].productPageListResponse.productId + "&token=" + self.token
                }
             }
         });

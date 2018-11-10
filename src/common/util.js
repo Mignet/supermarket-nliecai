@@ -17,7 +17,7 @@ util.getQueryString = (search) => {
 util.redirect = (url,isPush) => {
     if(util.isWebChat() && environment != 'pre') {
         let posUrl = staticHost[environment] + url;
-        location.href = 'https://nliecai.v5ent.com/getWechatCode.html?appid=wx83677e6da548b99e&redirect_uri=' + encodeURIComponent(posUrl) + '&scope=snsapi_base&state=1#wechat_redirect';
+        location.href = 'http://nliecai.v5ent.com/getWechatCode.html?appid=wx83677e6da548b99e&redirect_uri=' + encodeURIComponent(posUrl) + '&scope=snsapi_base&state=1#wechat_redirect';
     } else {
         location.href = url;
     }
